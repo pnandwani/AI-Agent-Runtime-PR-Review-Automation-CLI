@@ -115,23 +115,9 @@ The Markdown report is company-friendly and easy to attach to an email or GitHub
 - Explainable orchestration: runtime trace shows which tool ran and what happened.
 - Production-oriented resilience: retries are limited, typed, and observable.
 
-## Roadmap
+## Project Status
 
-- Add GitHub API integration for PR metadata and comments
-- Post inline review comments through a webhook or API sink
-- Add configurable rule packs and language-specific analyzers
-- Plug in an LLM summarizer as an optional final step, not the source of truth
-
-## Suggested GitHub repo name
-
-`agent-pr-reviewer`
-
-## How to present this to a company
-
-Lead with the engineering framing:
-
-> Built a Python-based agent runtime and PR review system that orchestrates repository analysis, deterministic static checks, failure handling, and structured reporting. Designed to reflect real AI system behavior beyond simple LLM calls by coordinating tools, memory, retries, and review workflows end to end.
-
-## License
-
-MIT
+- This is a **v1 uploadable version**, not fully production-complete  
+- The analyzers are **deterministic starter checks**, not a full lint/security engine yet  
+- GitHub API / OAuth / webhook components are **scaffolded and modeled**, but not fully integrated into a live workflow  
+- No CI/CD workflow has been set up yet  
